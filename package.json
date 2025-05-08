@@ -1,0 +1,10 @@
+{
+  "name": "github-artifact-preview",
+  "version": "0.0.1",
+  "description": "Chrome Extension to preview GitHub artifacts",
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "jszip": "^3.10.1"
+  }
+}

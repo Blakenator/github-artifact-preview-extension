@@ -1,0 +1,55 @@
+{
+  "name": "Github artifact preview",
+  "version": "0.0.1",
+  "description": "Chrome Extension to preview GitHub artifacts",
+  "permissions": [
+    "scripting",
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*.github.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.github.com/*"
+      ],
+      "js": [
+        "node_modules/jszip/dist/jszip.js",
+        "contentScript.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/ext-icon.png",
+        "video.js"
+      ],
+      "matches": [
+        "https://*.github.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/ext-icon.png",
+      "24": "assets/ext-icon.png",
+      "32": "assets/ext-icon.png"
+    },
+    "default_title": "Github artifact preview",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "assets/ext-icon.png",
+    "32": "assets/ext-icon.png",
+    "48": "assets/ext-icon.png",
+    "128": "assets/ext-icon.png"
+  },
+  "manifest_version": 3
+}

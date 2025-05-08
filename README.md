@@ -1,11 +1,8 @@
-# SpeedyMeet
-Chrome Extension to automatically open Google Meet links in the Google Meet PWA
+# Github artifact preview
+Chrome Extension to preview github artifacts without downloading them
 
 ## Installation
 Download this repo, and load as an Unpacked Extension in chrome://extensions
 
 ## Usage
-Once the Extension is installed, open the Google Meet PWA and then open a Google Meet link. You should see the Meet link open in a Tab and then get moved over to the PWA automatically.
-
-## Notes
-Currently it won't do anything if the PWA is not already open.
+Once the Extension is installed, open a github action with image or video artifacts. Clicking on the artifact will now open a preview instead of the download link. The actual download button is unchanged
